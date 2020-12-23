@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  background: rgb(221, 219, 219);
+}
+#wrapper {
+  width: 500px;
+  height: 80vh;
+  border: 1px solid black;
+  background: blanchedalmond;
+  border-radius: 4px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  font-weight: 300;
+  position: relative;
+}
+.income,
+.own {
+  width: 70%;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.own {
+  background-color: yellowgreen;
+  margin-left: auto;
+}
+.autor {
+  margin: 0 0 10px;
+}
+.message {
+  font-size: 12px;
+  margin: 0;
+}
+#send {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#message {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+}
+#tooltip,
+#tooltip-2 {
+  position: absolute;
+  top: 60px;
+  width: 193px;
+  padding: 0 10px;
+  height: 0;
+  left: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  z-index: 2;
+}
+#tooltip-2 {
+  left: 20px;
+  z-index: 3;
+}
+#up {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  background-color: greenyellow;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  left: calc(50% - 230px);
+  bottom: calc(10vh + 20px);
+}

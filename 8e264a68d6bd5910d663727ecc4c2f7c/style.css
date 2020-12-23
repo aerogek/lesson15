@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+#wrapper {
+  width: 500px;
+  height: 80vh;
+  border: 1px solid black;
+  background: blanchedalmond;
+  border-radius: 4px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.income,
+.own {
+  width: 70%;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.own {
+  background-color: yellowgreen;
+  margin-left: auto;
+}
+.autor {
+  margin: 0 0 10px;
+}
+.message {
+  font-size: 12px;
+  margin: 0;
+}
